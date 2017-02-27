@@ -1,0 +1,154 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    min-width: 600px;
+}
+#wrapper:before {
+    content:'';
+    float: left;
+    height: 100%;
+}
+#wrapper {
+    height: 100%;
+    color: white;
+}
+#header {
+    background-color:#1F1E1F;
+    height: 40px;
+}
+#header h2 {
+    margin:0px;
+    padding:0px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+#content {
+    background-color: #f1f1f1;
+    overflow-x:auto;
+    height: calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: -khtml-calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
+    height: -o-calc(100% - 40px);
+    height: -ms-calc(100% - 40px);
+}
+#content:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+#content .element {
+    height:190px;
+    float:left;
+    position: relative;
+    margin-top: 10px;
+}
+
+#content .element div{
+    height:92%;
+    width:92%;
+    margin:auto;
+    /*box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    background-color: white;*/
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+#content .element div p {
+    position: absolute;
+    margin-bottom: -10px;
+    font-weight: bold;
+    bottom: 0;
+    font-family: Arial, sans-serif;
+    color:#1F1E1F;
+    left:0;
+    right:0;
+    margin-left: 2px;
+}
+
+#content .element div img{
+    width:98%;
+    height:92%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    margin:auto;
+    margin-top:2px;
+    border-style:none;
+}
+.details-container {
+    height:400px;
+    display: none;
+    width:100%;
+    float:left;
+    margin-top: 0px;
+}
+.details {
+    width:100%;
+    background-color: #C8C8C8;
+    height:370px;
+    float:left;
+}
+.arrow {
+    width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;	
+	border-bottom: 20px solid #C8C8C8 ;
+}
+
+.a {
+    height:97% !important;;
+    width:97% !important;;
+}
+
+@media only screen 
+and (max-width : 750px) {
+     #content .element {
+        width:25%;
+     }
+}
+
+@media only screen 
+and (min-width : 750px)
+and (max-width : 1000px){
+     #content .element {
+        width:20%;
+     }
+}
+
+@media only screen 
+and (min-width : 1000px)
+and (max-width : 1200px){
+    #content .element {
+        width:16.6666666666%;
+     }
+}
+
+@media only screen 
+and (min-width : 1200px)
+and (max-width : 1400px){
+    #content .element {
+        width: 14.2857142857%;
+     }
+}
+
+@media only screen 
+and (min-width : 1400px)
+and (max-width : 1720px){
+    #content .element {
+        width: 12.5%;
+     }
+}
+
+@media only screen 
+and (min-width : 1720px){
+    #content .element {
+        width:10%;
+     }
+}
